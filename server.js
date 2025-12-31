@@ -16,6 +16,7 @@ app.get("/",(req,res)=>{
 
 app.use("/api/auth",require("./router/authroutes"))
 
+app.use("/api/tasks", require("./router/taskRoute"))
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT,()=>{
